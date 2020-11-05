@@ -28,5 +28,5 @@ submit_button = driver.find_element_by_css_selector(".submit-submission")
 submit_button.click()
 time.sleep(5)
 
-#  закрыть окно браузера
+#  Закрыть окно браузера
 driver.quit()

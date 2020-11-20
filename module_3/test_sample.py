@@ -19,8 +19,7 @@ class TestRegister(unittest.TestCase):
         login_page_link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
 
         user_email = generate_random_string(8) + "@gmail.com"
-        user_password1 = "Password2020"
-        user_password2 = "Password2020"
+        user_password1 = user_password2 = generate_random_string(16)
 
         email_input_locator = "id_registration-email"
         password1_input_locator = "id_registration-password1"

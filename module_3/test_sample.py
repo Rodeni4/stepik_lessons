@@ -1,7 +1,16 @@
+import random
+import string
 import time
 
 from selenium import webdriver
 import unittest
+
+
+def generate_random_string(length):
+    letters = string.ascii_lowercase
+    rand_string = ''.join(random.choice(letters) for i in range(length))
+    return rand_string
+
 
 class TestRegister(unittest.TestCase):
 
@@ -9,7 +18,7 @@ class TestRegister(unittest.TestCase):
         # Data
         login_page_link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
 
-        user_email = "Myuser100@gmail.com"
+        user_email = generate_random_string(8) + "@gmail.com"
         user_password1 = "Password2020"
         user_password2 = "Password2020"
 
@@ -39,7 +48,7 @@ class TestRegister(unittest.TestCase):
             button_registration.click()
 
             # Assert
-            messages_text_elt = browser.find_element_by_id( messages_text_locator)
+            messages_text_elt = browser.find_element_by_id(messages_text_locator)
             messages_text = messages_text_elt.text
 
             self.assertIn(expected_text, messages_text, "No message about successful registration!!!")
@@ -86,6 +95,7 @@ class TestRegister(unittest.TestCase):
         finally:
             time.sleep(5)
             browser.quit()
+
 
 if __name__ == "__main__":
     unittest.main()

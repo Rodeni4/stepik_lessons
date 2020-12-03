@@ -12,12 +12,17 @@ def pytest_addoption(parser):
 @pytest.fixture(scope="function")
 def browser(request):
     user_language = request.config.getoption("language")
-    browser = None
-    if user_language in ["ru", "en-GB", "es", "fr"]:
-        options = Options()
-        options.add_experimental_option('prefs', {'intl.accept_languages': user_language})
-    else:
+
+    if user_language not in ["ru", "en-GB", "es", "fr"]:
         raise pytest.UsageError("--language should be 'ru' or 'en-GB' or 'es' or 'fr'")
-    browser = webdriver.Chrome(options=options)
-    yield browser
-    browser.quit()
+
+    options = Options()
+    options.add_experimental_option('prefs', {'intl.accept_languages': user_language})
+
+    browser_chrome = webdriver.Chrome(options=options)
+    browser_chrome.maximize_window()
+    browser_chrome.implicitly_wait(5)
+    browser_chrome.language_user = user_language
+
+    yield browser_chrome
+    browser_chrome.quit()

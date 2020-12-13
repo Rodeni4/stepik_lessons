@@ -10,10 +10,7 @@ class ProductPage(BasePage):
 
         self.solve_quiz_and_get_code()
 
-        self.should_be_name_product()
-        self.should_be_price()
-
-    def should_be_name_product(self):
+    def basket_should_contain_name_product(self):
         product_form = self.browser.find_element(*ProductPageLocators.PRODUCT_FORM)
         product_name = product_form.find_element(*ProductPageLocators.PRODUCT_NAME).text
 
@@ -23,7 +20,7 @@ class ProductPage(BasePage):
         assert product_name == name_in_message, \
             f"{product_name} -- Product name not name in message -- {name_in_message}"
 
-    def should_be_price(self):
+    def basket_should_contain_price_product(self):
 
         product_form = self.browser.find_element(*ProductPageLocators.PRODUCT_FORM)
         product_price = product_form.find_element(*ProductPageLocators.PRODUCT_PRICE).text
@@ -33,3 +30,12 @@ class ProductPage(BasePage):
 
         assert product_price == message_product_price, \
             f"{product_price} -- Basket value no product price -- {message_product_price}"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_is_disappeared(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, not is disappeared"
+

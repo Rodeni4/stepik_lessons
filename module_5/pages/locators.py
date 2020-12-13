@@ -20,3 +20,5 @@ class ProductPageLocators:
     ALERT_MESSAGE = (By.CSS_SELECTOR, "#messages")
     MESSAGE_TEXT = (By.CSS_SELECTOR, ".alert:nth-child(1) strong")
     MESSAGE_PRICE = (By.CSS_SELECTOR, ".alert-info strong")
+
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert:nth-child(1)")

@@ -12,8 +12,13 @@ class LoginPage(BasePage):
         self.should_be_register_form()
 
     def should_be_login_url(self):
+        #Data
+        expected_result = "login"
+        url_browser = self.browser.current_url
+
         # Assert
-        assert "login" in self.browser.current_url, "String 'login' is not in current url of browser"
+        assert expected_result in url_browser, \
+            f"{expected_result} -- String is not in url of browser -- {url_browser}"
 
     def should_be_login_form(self):
         # Assert
@@ -22,3 +27,16 @@ class LoginPage(BasePage):
     def should_be_register_form(self):
         # Assert
         assert self.is_element_present(*LoginPageLocators.REGISTER_FORM), "Register form is not presented"
+
+    def register_new_user(self, email, password):
+        # Arrange
+        email_input = self.browser.find_element(*LoginPageLocators.EMAIL_INPUT)
+        email_input.send_keys(email)
+        password_input = self.browser.find_element(*LoginPageLocators.PASSWORD_INPUT)
+        password_input.send_keys(password)
+        repeat_password_input = self.browser.find_element(*LoginPageLocators.REPEAT_PASSWORD_INPUT)
+        repeat_password_input.send_keys(password)
+
+        # Act
+        button_registration = self.browser.find_element(*LoginPageLocators.BUTTON_REGISTRATION)
+        button_registration.click()

@@ -1,9 +1,17 @@
 import math
+import random
+import string
 
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoAlertPresentException, TimeoutException, NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from .locators import BasePageLocators
+
+
+def generate_random_string(length):
+    letters = string.ascii_lowercase
+    rand_string = ''.join(random.choice(letters) for i in range(length))
+    return rand_string
 
 
 class BasePage:
@@ -64,6 +72,11 @@ class BasePage:
         # Act
         button_basket_opened = self.browser.find_element(*BasePageLocators.BUTTON_BASKET_OPENED)
         button_basket_opened.click()
+
+    def should_be_authorized_user(self):
+        # Assert
+        assert self.is_element_present(*BasePageLocators.USER_ICON), \
+            "User icon is not presented probably unauthorised user"
 
 
 

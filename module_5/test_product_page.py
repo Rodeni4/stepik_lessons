@@ -36,3 +36,16 @@ class TestProductPage:
         page.open()
         page.add_product_to_basket()
         page.should_is_disappeared()
+
+    def test_guest_should_see_login_link_on_product_page(self, browser):
+        page = ProductPage(browser, product_link)
+        page.open()
+        page.should_be_login_link()
+
+    def test_guest_can_go_to_login_page_from_product_page(self, browser):
+        page = ProductPage(browser, product_link)
+        page.open()
+        page.go_to_login_page()
+
+
+

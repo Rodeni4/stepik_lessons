@@ -20,7 +20,7 @@ class ProductPage(BasePage):
         alert_message = self.browser.find_element(*ProductPageLocators.ALERT_MESSAGE)
         name_in_message = alert_message.find_element(*ProductPageLocators.MESSAGE_TEXT).text
 
-        assert product_name in name_in_message, \
+        assert product_name == name_in_message, \
             f"{product_name} -- Product name not name in message -- {name_in_message}"
 
     def should_be_price(self):
@@ -31,5 +31,5 @@ class ProductPage(BasePage):
         alert_message = self.browser.find_element(*ProductPageLocators.ALERT_MESSAGE)
         message_product_price = alert_message.find_element(*ProductPageLocators.MESSAGE_PRICE).text
 
-        assert product_price in message_product_price, \
+        assert product_price == message_product_price, \
             f"{product_price} -- Basket value no product price -- {message_product_price}"

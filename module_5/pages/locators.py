@@ -18,5 +18,5 @@ class ProductPageLocators:
     PRODUCT_PRICE = (By.TAG_NAME, "p.price_color")
 
     ALERT_MESSAGE = (By.CSS_SELECTOR, "#messages")
-    MESSAGE_TEXT = (By.CSS_SELECTOR, ".alert:nth-child(1)")
-    MESSAGE_PRICE = (By.CSS_SELECTOR, ".alert-info")
+    MESSAGE_TEXT = (By.CSS_SELECTOR, ".alert:nth-child(1) strong")
+    MESSAGE_PRICE = (By.CSS_SELECTOR, ".alert-info strong")

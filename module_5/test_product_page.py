@@ -2,13 +2,12 @@ import pytest
 
 from .pages.base_page import generate_random_string
 from .pages.basket_page import BasketPage
-from .pages.locators import BasePageLocators
 from .pages.login_page import LoginPage
 from .pages.main_page import MainPage
 from .pages.product_page import ProductPage
 
 # Data
-product_link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
+product_link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/"
 
 
 class TestProductPage:
@@ -119,8 +118,3 @@ class TestUserAddToBasketFromProductPage:
 
         # Assert
         product_page.should_not_be_success_message()
-
-
-
-
-

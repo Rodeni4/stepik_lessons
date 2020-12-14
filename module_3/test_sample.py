@@ -18,7 +18,7 @@ class TestRegister(unittest.TestCase):
 
     def test_new_user_registration(self):
         # Data
-        login_page_link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
+        login_page_link = "http://selenium1py.pythonanywhere.com/accounts/login/"
 
         user_email = generate_random_string(8) + "@gmail.com"
         user_password = user_repeat_password = generate_random_string(16)
@@ -59,7 +59,7 @@ class TestRegister(unittest.TestCase):
 
     def test_log_in(self):
         # Data
-        login_page_link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
+        login_page_link = "http://selenium1py.pythonanywhere.com/accounts/login/"
 
         user_email = "Myuser20@gmail.com"
         user_password = "Password2020"
@@ -100,7 +100,7 @@ class TestDeleteProduct(unittest.TestCase):
     @unittest.skip("Temporarily skip - error working with the 'Delete' link")
     def test_delete_product(self):
         # Data
-        catalog_page_link = "http://selenium1py.pythonanywhere.com/ru/catalogue/"
+        catalog_page_link = "http://selenium1py.pythonanywhere.com/catalogue/"
 
         browser = webdriver.Chrome()
         browser.implicitly_wait(5)
@@ -138,7 +138,7 @@ class TestDeleteProduct(unittest.TestCase):
 
     def test_go_to_checkout(self):
         # Data
-        login_page_link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
+        login_page_link = "http://selenium1py.pythonanywhere.com/accounts/login/"
 
         user_email = "Myuser20@gmail.com"
         user_password = "Password2020"

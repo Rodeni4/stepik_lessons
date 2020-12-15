@@ -9,6 +9,9 @@ class ProductPage(BasePage):
         button_add_to_basket = self.browser.find_element(*ProductPageLocators.BUTTON_ADD_TO_BASKET)
         button_add_to_basket.click()
 
+        # Assert
+        self.solve_quiz_and_get_code()
+
     def basket_should_contain_name_product(self):
         # Act
         product_form = self.browser.find_element(*ProductPageLocators.PRODUCT_FORM)

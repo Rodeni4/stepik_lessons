@@ -10,19 +10,34 @@ from .pages.product_page import ProductPage
 product_link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/"
 
 
-class TestProductPage:
-    def test_guest_can_add_product_to_basket(self, browser):
+@pytest.mark.parametrize('link', ["http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0",
+                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer1",
+                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer2",
+                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer3",
+                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer4",
+                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer5",
+                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer6",
+                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer7",
+                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer8",
+                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9"
+                                  ])
+@pytest.mark.to_basket
+class TestProductParametrize:
+    def test_guest_can_add_product_to_basket(self, browser, link):
         # Arrange
-        product_page = ProductPage(browser, product_link)
-        product_page.open()
+        page = ProductPage(browser, link)
+        page.open()
 
         # Act
-        product_page.add_product_to_basket()
+        page.add_product_to_basket()
 
         # Assert
-        product_page.basket_should_contain_name_product()
-        product_page.basket_should_contain_price_product()
+        page.basket_should_contain_name_product()
+        page.basket_should_contain_price_product()
 
+
+@pytest.mark.to_basket
+class TestProductPage:
     def test_guest_cant_see_success_message(self, browser):
         # Arrange
         product_page = ProductPage(browser, product_link)

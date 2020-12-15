@@ -7,7 +7,7 @@ from .pages.main_page import MainPage
 from .pages.product_page import ProductPage
 
 # Data
-product_link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/"
+product_link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
 
 
 @pytest.mark.parametrize('link', ["http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0",
@@ -17,7 +17,8 @@ product_link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer4",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer5",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer6",
-                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer7",
+                                  pytest.param("http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207"
+                                               "/?promo=offer7", marks=pytest.mark.xfail),
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer8",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9"
                                   ])

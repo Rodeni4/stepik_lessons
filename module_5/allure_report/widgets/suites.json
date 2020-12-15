@@ -4,10 +4,10 @@
     "uid" : "1b92dd24d2433d29580106c20b1794f5",
     "name" : "module_5",
     "statistic" : {
-      "failed" : 1,
-      "broken" : 1,
-      "skipped" : 2,
-      "passed" : 20,
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 3,
+      "passed" : 21,
       "unknown" : 0,
       "total" : 24
     }

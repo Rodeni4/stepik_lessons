@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Dec 21 15:03:06 NOVT 2020","Mon Dec 21 15:03:07 NOVT 2020","687","","test_product_page","TestGuestProductPage","","","test_guest_should_see_page_checkout",""
+"passed","Mon Dec 21 15:04:49 NOVT 2020","Mon Dec 21 15:04:54 NOVT 2020","5554","","test_product_page","TestCreateNewUser","","","test_user_login",""
+"skipped","Mon Dec 21 15:04:22 NOVT 2020","Mon Dec 21 15:04:32 NOVT 2020","10138","","test_product_page","TestUserProductPage","","","test_user_should_see_empty_bucket",""
+"passed","Mon Dec 21 15:03:54 NOVT 2020","Mon Dec 21 15:03:55 NOVT 2020","1045","","test_product_page","TestUserProductPage","","","test_user_should_see_page_checkout",""
+"passed","Mon Dec 21 15:04:37 NOVT 2020","Mon Dec 21 15:04:44 NOVT 2020","7811","","test_product_page","TestCreateNewUser","","","test_register_new_user",""
+"skipped","Mon Dec 21 15:03:16 NOVT 2020","Mon Dec 21 15:03:26 NOVT 2020","10098","","test_product_page","TestGuestProductPage","","","test_guest_should_see_empty_bucket",""

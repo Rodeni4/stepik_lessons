@@ -1,0 +1,83 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_guest_should_see_page_checkout",
+    "uid" : "2b1305a3dd07907",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1608537786835,
+      "stop" : 1608537787522,
+      "duration" : 687
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_guest_should_see_empty_bucket",
+    "uid" : "b99395e2f8773b6b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1608537796658,
+      "stop" : 1608537806756,
+      "duration" : 10098
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_user_should_see_page_checkout",
+    "uid" : "4d80036f32ef94ce",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1608537834931,
+      "stop" : 1608537835976,
+      "duration" : 1045
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_user_should_see_empty_bucket",
+    "uid" : "52895f697e6973dd",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1608537862695,
+      "stop" : 1608537872833,
+      "duration" : 10138
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_register_new_user",
+    "uid" : "4ac3e550fe3ccb41",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1608537877047,
+      "stop" : 1608537884858,
+      "duration" : 7811
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_user_login",
+    "uid" : "c445a7e6392eca9c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1608537889142,
+      "stop" : 1608537894696,
+      "duration" : 5554
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

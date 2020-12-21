@@ -1,0 +1,124 @@
+{
+  "uid" : "52895f697e6973dd",
+  "name" : "test_user_should_see_empty_bucket",
+  "fullName" : "test_product_page.TestUserProductPage#test_user_should_see_empty_bucket",
+  "historyId" : "c4aa36e359cba9c046ae8bd6b03ab344",
+  "time" : {
+    "start" : 1608537862695,
+    "stop" : 1608537872833,
+    "duration" : 10138
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL -- fixing this bug right now. --\n\nAssertionError:  -- Success remove message not presented",
+  "statusTrace" : "E   AssertionError:  -- Success remove message not presented",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608537838657,
+      "stop" : 1608537840195,
+      "duration" : 1538
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1608537840196,
+      "stop" : 1608537862693,
+      "duration" : 22497
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "XFAIL -- fixing this bug right now. --\n\nAssertionError:  -- Success remove message not presented",
+    "statusTrace" : "E   AssertionError:  -- Success remove message not presented",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3b454742406d2a0c",
+      "name" : "stdout",
+      "source" : "3b454742406d2a0c.txt",
+      "type" : "text/plain",
+      "size" : 53
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608537872841,
+      "stop" : 1608537875511,
+      "duration" : 2670
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "User"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail(reason='-- fixing this bug right now. --')"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUserProductPage"
+  }, {
+    "name" : "host",
+    "value" : "Netbook"
+  }, {
+    "name" : "thread",
+    "value" : "14872-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "User", "@pytest.mark.xfail(reason='-- fixing this bug right now. --')" ]
+  },
+  "source" : "52895f697e6973dd.json",
+  "parameterValues" : [ ]
+}

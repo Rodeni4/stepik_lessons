@@ -1,0 +1,118 @@
+{
+  "ab1ae9f3b4d8c88cde3082fc37692d1b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b99395e2f8773b6b",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL -- fixing this bug right now. --\n\nAssertionError:  -- Success remove message not presented",
+      "time" : {
+        "start" : 1608537796658,
+        "stop" : 1608537806756,
+        "duration" : 10098
+      }
+    } ]
+  },
+  "7b0e36ca8c925720bd06b556238788b3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4d80036f32ef94ce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608537834931,
+        "stop" : 1608537835976,
+        "duration" : 1045
+      }
+    } ]
+  },
+  "6e5fdd2eb7626e5f52cf42ced6515fed" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2b1305a3dd07907",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608537786835,
+        "stop" : 1608537787522,
+        "duration" : 687
+      }
+    } ]
+  },
+  "83171e47396c82605b292c5a61625bf2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c445a7e6392eca9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608537889142,
+        "stop" : 1608537894696,
+        "duration" : 5554
+      }
+    } ]
+  },
+  "c4aa36e359cba9c046ae8bd6b03ab344" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "52895f697e6973dd",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL -- fixing this bug right now. --\n\nAssertionError:  -- Success remove message not presented",
+      "time" : {
+        "start" : 1608537862695,
+        "stop" : 1608537872833,
+        "duration" : 10138
+      }
+    } ]
+  },
+  "ad0848be0e329025d599a4801de958c5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4ac3e550fe3ccb41",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608537877047,
+        "stop" : 1608537884858,
+        "duration" : 7811
+      }
+    } ]
+  }
+}

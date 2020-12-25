@@ -5,7 +5,7 @@ from final.pages.locators import ProductPageLocators
 
 
 class ProductPage(BasePage):
-    link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/"
+    link = "http://selenium1py.pythonanywhere.com/catalogue/"
 
     dictionary = {
         "ru": {
@@ -16,8 +16,8 @@ class ProductPage(BasePage):
         }
     }
 
-    def __init__(self, browser, link_parametrize = None):
-        super(ProductPage, self).__init__(browser, self.link)
+    def __init__(self, browser, product_link):
+        super(ProductPage, self).__init__(browser, "{}{}".format(self.link, product_link))
 
     def click_button_add_to_basket(self):
         click_button = self.browser.find_element(*ProductPageLocators.BTN_ADD_TO_BASKET)

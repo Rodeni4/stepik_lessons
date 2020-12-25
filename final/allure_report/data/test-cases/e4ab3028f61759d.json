@@ -1,0 +1,83 @@
+{
+  "uid" : "e4ab3028f61759d",
+  "name" : "test_register_new_user",
+  "fullName" : "test_product_page.TestCreateNewUser#test_register_new_user",
+  "historyId" : "ad0848be0e329025d599a4801de958c5",
+  "time" : {
+    "start" : 1608929505162,
+    "stop" : 1608929512748,
+    "duration" : 7586
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608929503534,
+      "stop" : 1608929505160,
+      "duration" : 1626
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608929512750,
+      "stop" : 1608929515507,
+      "duration" : 2757
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateNewUser"
+  }, {
+    "name" : "host",
+    "value" : "Netbook"
+  }, {
+    "name" : "thread",
+    "value" : "17300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e4ab3028f61759d.json",
+  "parameterValues" : [ ]
+}

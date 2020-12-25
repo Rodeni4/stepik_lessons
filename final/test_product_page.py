@@ -7,10 +7,13 @@ from final.pages.product_page import ProductPage
 
 
 class TestGuestProductPage:
+    # Data
+    test_product_link = "hacking-exposed-wireless_209/"
+
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):
         # Arrange
-        product_page = ProductPage(browser)
+        product_page = ProductPage(browser, self.test_product_link)
         product_page.open()
         product_page.click_button_add_to_basket()
         product_page.click_button_view_basket()
@@ -34,6 +37,9 @@ class TestGuestProductPage:
 
 
 class TestUserProductPage:
+    # Data
+    test_product_link = "hacking-exposed-wireless_209/"
+
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):
         # Data
@@ -46,11 +52,12 @@ class TestUserProductPage:
         basket_page = BasketPage(browser)
         basket_page.open()
         basket_page.user_clear_basket()
-        product_page = ProductPage(browser)
+        product_page = ProductPage(browser, self.test_product_link)
         product_page.open()
         product_page.click_button_add_to_basket()
         product_page.click_button_view_basket()
 
+    @pytest.mark.User
     def test_user_should_see_page_checkout(self, browser):
         # Act
         basket_page = BasketPage(browser)
@@ -115,9 +122,9 @@ class TestCreateNewUser:
 class TestProductParametrize:
     # Data
     @pytest.mark.parametrize('link_parametrize',
-                             ["http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_208/",
-                              "http://selenium1py.pythonanywhere.com/catalogue/hacking-exposed-wireless_209/",
-                              "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+                             ["the-shellcoders-handbook_208/",
+                              "hacking-exposed-wireless_209/",
+                              "coders-at-work_207/"
                               ])
     def test_click_button_add_to_basket(self, browser, link_parametrize):
         # Arrange

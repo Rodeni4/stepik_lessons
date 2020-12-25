@@ -1,2 +1,0 @@
-Expected result, message text - Your basket is empty
-Expected result, message text - Shipping address

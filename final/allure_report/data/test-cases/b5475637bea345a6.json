@@ -1,0 +1,89 @@
+{
+  "uid" : "b5475637bea345a6",
+  "name" : "test_click_button_add_to_basket[hacking-exposed-wireless_209/]",
+  "fullName" : "test_product_page.TestProductParametrize#test_click_button_add_to_basket",
+  "historyId" : "35b9cdbc888538d1cacd206a74163279",
+  "time" : {
+    "start" : 1608929547577,
+    "stop" : 1608929551432,
+    "duration" : 3855
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608929545828,
+      "stop" : 1608929547575,
+      "duration" : 1747
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608929551434,
+      "stop" : 1608929555387,
+      "duration" : 3953
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "User"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductParametrize"
+  }, {
+    "name" : "host",
+    "value" : "Netbook"
+  }, {
+    "name" : "thread",
+    "value" : "17300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "link_parametrize",
+    "value" : "'hacking-exposed-wireless_209/'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "User" ]
+  },
+  "source" : "b5475637bea345a6.json",
+  "parameterValues" : [ "'hacking-exposed-wireless_209/'" ]
+}

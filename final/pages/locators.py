@@ -28,6 +28,8 @@ class BasketPageLocators:
 class ProductPageLocators:
     BTN_ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
 
+    ALERT_MESSAGE_TEXT = (By.CSS_SELECTOR, ".alertinner")
+
 
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
@@ -44,6 +46,9 @@ class LoginPageLocators:
 
     GREEN_MESSAGE = (By.CSS_SELECTOR, ".alertinner.wicon")
 
+    ALERT_DANGER = (By.CSS_SELECTOR, ".alert-danger")
+
+    ERROR_TEXT = (By.CSS_SELECTOR, ".error-block")
 
 
 

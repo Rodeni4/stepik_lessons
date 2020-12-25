@@ -16,7 +16,6 @@ def pytest_addoption(parser):
 def browser(request):
     browser_name = request.config.getoption("browser_name")
     user_language = request.config.getoption("language")
-
     browser = None
 
     if user_language not in ["ru", "en-GB"]:
